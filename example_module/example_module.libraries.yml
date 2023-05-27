@@ -1,0 +1,5 @@
+form-styles:
+  version: 1.x
+  css:
+    theme:
+      css/example-form.css: {}
