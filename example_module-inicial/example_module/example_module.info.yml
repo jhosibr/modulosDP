@@ -1,0 +1,5 @@
+name: Example Module
+type: module
+description: 'Módulo de ejemplo para Drupal 8 o 9.'
+core: 8.x
+package: Custom

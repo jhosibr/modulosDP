@@ -1,0 +1,7 @@
+example_crud.data:
+  path: '/example-crud/data'
+  defaults:
+    _entity_resource: example_user
+methods: [GET, POST, PATCH, DELETE]
+requirements:
+_permission: 'access content'

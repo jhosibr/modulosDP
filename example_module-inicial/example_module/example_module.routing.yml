@@ -1,0 +1,15 @@
+example_module.form:
+  path: '/example-module/form'
+  defaults:
+    _form: '\Drupal\example_module\Form\ExampleForm'
+    _title: 'Formulario de ejemplo'
+  requirements:
+    _permission: 'access content'
+
+example_module.data:
+  path: '/example-module/data'
+  defaults:
+    _controller: '\Drupal\example_module\Controller\ExampleController::data'
+    _title: 'Datos de ejemplo'
+  requirements:
+    _permission: 'access content'

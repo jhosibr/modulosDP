@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the example_module module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function example_module_schema() {
+  $schema['example_users'] = [
+    'description' => 'Tabla para almacenar los datos del formulario de ejemplo.',
+    'fields' => [
+      'name' => [
+        'description' => 'Nombre del usuario.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'identification' => [
+        'description' => 'Identificación del usuario.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'birthdate' => [
+        'description' => 'Fecha de nacimiento del usuario.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'position' => [
+        'description' => 'Cargo del usuario.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+      ],
+      'status' => [
+        'description' => 'Estado del usuario.',
+        'type' => 'int',
+        'size' => 'tiny',
+        'not null' => TRUE,
+      ],
+    ],
+  ];
+  return $schema;
+}
